@@ -1,0 +1,25 @@
+//
+   Created by gfrethem on 10/7/15.
+extends layout
+
+block content
+   main
+      h1= title
+      .addAssigns
+         form(id="assignmentsForm" method="POST")
+            p= "Assignment Number: "
+               br
+               input(name="assignment_number", type="text")
+            p= "Student Name: "
+               br
+               input(name="student_name", type="text")
+            p= "Score: "
+               br
+               input(name="score", type="text")
+            p= "Date Completed: "
+               br
+               input(name="date_completed", type="date")
+            p
+               button(type="submit") Click me!
+
+      .listAssigns
